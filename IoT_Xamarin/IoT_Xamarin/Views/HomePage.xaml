@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IoT_Xamarin.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#E8E8E8" Padding="10">
+                <Label Text="Car" FontSize="Medium" />
+            </Frame>
+            <Frame BackgroundColor="#E8E8E8" Padding="10">
+                <Label Text="Truck" FontSize="Medium" />
+            </Frame>
+            <Frame BackgroundColor="#E8E8E8" Padding="10">
+                <Label Text="Generator" FontSize="Medium" />
+            </Frame>
+            <Frame BackgroundColor="#E8E8E8" Padding="10">
+                <Label Text="Fridge" FontSize="Medium" />
+            </Frame>
+         <ListView 
+           x:Name="AssetListView">
+           <ListView.ItemTemplate>
+           <DataTemplate>
+            <ViewCell>
+         <StackLayout>
+        <Frame 
+            BackgroundColor="#E8E8E8" 
+            Padding="10">
+            Label Text="{Binding}" 
+            FontSize="Medium" />
+            
+            
+             </Frame>
+             
+             
+            </StackLayout>
+                
+            </ViewCell>
+            </DataTemplate>
+               
+            </ListView.ItemTemplate>
+           
+            </ListView>
+            
+           </StackLayout>
+        
+         </ContentPage.Content>
+    
+         </ContentPage>
